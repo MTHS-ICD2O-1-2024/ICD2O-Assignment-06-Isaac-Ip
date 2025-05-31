@@ -21,8 +21,8 @@ async function getRandomQuote() {
     const author = jsonData[0].author
 
     // output
-    document.getElementById("quote").innerHTML = "<p>" + quote + "</p>"
-    document.getElementById("author").innerHTML = "<p>" + author + "</p>"
+    document.getElementById("quote").innerHTML = "\"" + quote + "\""
+    document.getElementById("author").innerHTML = "Author: " + author + "</p>"
   } catch (error) {
     console.error(error)
   }
